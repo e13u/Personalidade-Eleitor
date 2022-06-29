@@ -16,16 +16,16 @@ MonoBehaviour:
   _answers:
   - _info: 10,000 Fahrenheit
     _isCorrect: 1
-    _score: 0
+    _score: 1
   - _info: 100,000 Fahrenheit
     _isCorrect: 1
-    _score: 0
+    _score: 2
   - _info: 1,000 Fahrenheit
     _isCorrect: 1
-    _score: 0
+    _score: 3
   - _info: 1,000 Fahrenheit
     _isCorrect: 1
-    _score: 0
+    _score: 4
   _useTimer: 0
   _timer: 10
   _answerType: 0

@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour {
         var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
         UnityEngine.Random.InitState(seed);
 
-        savedAnswers = new int[8] {-1, -1, -1,-1,-1,-1,-1,-1};
+        savedAnswers = new int[9] {-1, -1, -1,-1,-1,-1,-1,-1,-1};
 
         Display();
     }
@@ -113,6 +113,7 @@ public class GameManager : MonoBehaviour {
             PickedAnswers.Clear();
             PickedAnswers.Add(newAnswer);
             savedAnswers[questionId] = newAnswer.answerId;
+            Invoke("Accept",0.2f);
 
         //}
         //else
@@ -424,6 +425,25 @@ public class GameManager : MonoBehaviour {
 
     public void ResultsScreen()
     {
-        SceneManager.LoadScene("Results");
+        bool finished = true;
+        for (int i = 0; i < savedAnswers.Length; i++)
+        {
+            if(savedAnswers[i] == -1) finished = false;
+        }
+
+        if(finished){
+            PlayerPrefs.SetInt("FinalScore",CalculateScore());
+            SceneManager.LoadScene("Results");
+        }
+    }
+
+    int CalculateScore(){
+        int finalScore = 0;
+        for(int i =0; i <savedAnswers.Length;i++){
+            int score = _questions[i]._answers[savedAnswers[i]].Score;
+            PlayerPrefs.SetInt("Score_"+i,score);
+            finalScore += score;
+        }
+        return finalScore;
     }
 }

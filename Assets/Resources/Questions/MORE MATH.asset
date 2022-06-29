@@ -16,18 +16,18 @@ MonoBehaviour:
   _answers:
   - _info: 1
     _isCorrect: 1
-    _score: 0
+    _score: 1
   - _info: 3
     _isCorrect: 1
-    _score: 0
+    _score: 2
   - _info: 4
     _isCorrect: 1
-    _score: 0
+    _score: 3
   - _info: '5
 
 '
     _isCorrect: 1
-    _score: 0
+    _score: 4
   _useTimer: 0
   _timer: 4
   _answerType: 0

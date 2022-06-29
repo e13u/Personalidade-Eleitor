@@ -16,16 +16,16 @@ MonoBehaviour:
   _answers:
   - _info: Flat
     _isCorrect: 1
-    _score: 0
+    _score: 1
   - _info: Sphere
     _isCorrect: 1
-    _score: 0
+    _score: 2
   - _info: Box
     _isCorrect: 1
-    _score: 0
+    _score: 3
   - _info: Donut
     _isCorrect: 1
-    _score: 0
+    _score: 4
   _useTimer: 0
   _timer: 30
   _answerType: 0

@@ -16,16 +16,16 @@ MonoBehaviour:
   _answers:
   - _info: 10m
     _isCorrect: 1
-    _score: 0
+    _score: 1
   - _info: 100m
     _isCorrect: 1
-    _score: 0
+    _score: 2
   - _info: 1000m
     _isCorrect: 1
-    _score: 0
+    _score: 3
   - _info: 1000mm
     _isCorrect: 1
-    _score: 0
+    _score: 4
   _useTimer: 0
   _timer: 0
   _answerType: 0

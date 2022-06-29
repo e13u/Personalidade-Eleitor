@@ -75,8 +75,6 @@ public class AnswerData : MonoBehaviour {
         if (toggle == null){
             return;
         }
-        Debug.Log("CHECKING: "+Checked);
-
         toggle.sprite = (Checked) ? checkedToggle : uncheckedToggle;
     }
 

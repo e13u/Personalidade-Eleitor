@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: ChooseFood
+  m_Name: Mario
   m_EditorClassIdentifier: 
-  _info: Choose Food?
+  _info: What is Mario's brother name?
   _answers:
-  - _info: Rice
-    _isCorrect: 1
-    _score: 1
-  - _info: Ice
-    _isCorrect: 1
-    _score: 2
-  - _info: Dice
-    _isCorrect: 1
-    _score: 3
-  - _info: Mice?
+  - _info: Luigi
     _isCorrect: 1
     _score: 4
+  - _info: Wario
+    _isCorrect: 1
+    _score: 3
+  - _info: Waluigi
+    _isCorrect: 1
+    _score: 2
+  - _info: Yoshi
+    _isCorrect: 1
+    _score: 1
   _useTimer: 0
-  _timer: 0
+  _timer: 10
   _answerType: 0
-  _addScore: 10
+  _addScore: 20
