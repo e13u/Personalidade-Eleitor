@@ -22,7 +22,7 @@ public class Question : ScriptableObject {
     [SerializeField] private    String      _info           = String.Empty;
     public                      String      Info            { get { return _info; } }
 
-    [SerializeField]            Answer[]    _answers        = null;
+    public                      Answer[]    _answers        = null;
     public                      Answer[]    Answers         { get { return _answers; } }
 
     //Parameters

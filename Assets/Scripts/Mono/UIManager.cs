@@ -80,6 +80,10 @@ public class UIManager : MonoBehaviour {
     private             IEnumerator            IE_DisplayTimedResolution    = null;
 
     private GameManager gm;
+    [SerializeField]
+    private Transform answerChild;
+    [SerializeField]
+    private AnswerData answerChildData;
 
     #endregion
 
@@ -217,15 +221,14 @@ public class UIManager : MonoBehaviour {
             uIElements.AnswersContentArea.sizeDelta = new Vector2(uIElements.AnswersContentArea.sizeDelta.x, offset * -1);
 
             currentAnswers.Add(newAnswer);
-            //UpdatePreviousAnswer(question, 0);
         }
     }
 
     void UpdatePreviousAnswer(int previousAnswer)
     {
-        Debug.Log("TESTE2: "+previousAnswer);
-        Transform answerChild = uIElements.AnswersContentArea.GetChild(previousAnswer);
-        answerChild.GetComponent<AnswerData>().SwitchState();
+        answerChild = uIElements.AnswersContentArea.GetChild(previousAnswer);
+        answerChildData = answerChild.GetComponent<AnswerData>();
+        answerChildData.CheckPreviousAnswer();
     }
 
     /// <summary>

@@ -32,8 +32,8 @@ public class AnswerData : MonoBehaviour {
 
     private             int             _answerIndex        = -1;
     public              int             AnswerIndex         { get { return _answerIndex; } }
-    [SerializeField]
-    private             bool            Checked             = false;
+    //[SerializeField]
+    public             bool            Checked             = false;
     public int answerId = -1;
 
     #endregion
@@ -66,15 +66,27 @@ public class AnswerData : MonoBehaviour {
         {
             events.UpdateQuestionAnswer(this);
         }
-        Debug.Log("SWITCHING");
     }
     /// <summary>
     /// Function that is called to update UI.
     /// </summary>
     void UpdateUI ()
     {
-        if (toggle == null) return;
+        if (toggle == null){
+            return;
+        }
+        Debug.Log("CHECKING: "+Checked);
 
         toggle.sprite = (Checked) ? checkedToggle : uncheckedToggle;
+    }
+
+    public void CheckPreviousAnswer(){
+        Checked = true;
+        UpdateUI2();
+    }
+
+     void UpdateUI2()
+    {
+        toggle.sprite =  checkedToggle;
     }
 }

@@ -9,7 +9,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     #region Variables
-
+    
+    [SerializeField]
     private             Question[]          _questions              = null;
     public              Question[]          Questions               { get { return _questions; } }
 
@@ -153,7 +154,8 @@ public class GameManager : MonoBehaviour {
         //MARCAR RESPOSTA ESCOLHIDA SE HOUVER
         if(savedAnswers[questionId] != -1)
         {
-            events.UpdatePreviousAnswer(savedAnswers[questionId]);
+            //events.UpdatePreviousAnswer(savedAnswers[questionId]);
+            StartCoroutine("IEUpdatePrevious");
         }
 
         //if (question.UseTimer)
@@ -162,6 +164,10 @@ public class GameManager : MonoBehaviour {
         //}
     }
 
+    IEnumerator IEUpdatePrevious(){
+        yield return new WaitForSeconds(0.1f); 
+        events.UpdatePreviousAnswer(savedAnswers[questionId]);
+    }
     /// <summary>
     /// Function that is called to accept picked answers and check/display the result.
     /// </summary>
@@ -325,6 +331,31 @@ public class GameManager : MonoBehaviour {
         {
             _questions[i] = (Question)objs[i];
         }
+
+        for (int i = 0; i < _questions.Length; i++)
+        {
+           RandomizeAnswers(_questions[i]);
+        }
+    }
+
+    void RandomizeAnswers(Question q){
+        int count = q._answers.Length;
+        Answer[] tempAnswers = q._answers;
+        //Answer[] randAnswers = null;
+
+        for (int i = 0; i < count; i++) {
+            //int randomIndex = Random.Range(i, tempAnswers.Length);
+            //Answer temp = tempAnswers[randomIndex];
+            //randAnswers[i] = temp;
+            //q[i] = q[randomIndex];
+            //q[randomIndex] = temp;
+            
+            Answer tmp = q._answers[i];
+            int r = Random.Range(i, q._answers.Length);
+            q._answers[i] = q._answers[r];
+            q._answers[r] = tmp;
+        }
+        //Debug.Log(q._answers);
     }
 
     /// <summary>
