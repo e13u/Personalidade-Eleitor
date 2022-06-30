@@ -10,20 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: ChooseFood
+  m_Name: 2
   m_EditorClassIdentifier: 
-  _info: Choose Food?
+  _info: 2) Votar pra mim significa...
   _answers:
-  - _info: Rice
+  - _info: "protestar! Eu voto nulo ou branco, ningu\xE9m que est\xE1 a\xED merece
+      meu voto, mesmo."
     _isCorrect: 1
     _score: 1
-  - _info: Ice
+  - _info: "uma obriga\xE7\xE3o. Se n\xE3o desse problema ficar sem votar, nunca
+      mais aparecia."
     _isCorrect: 1
     _score: 2
-  - _info: Dice
+  - _info: "ser cidad\xE3o. Essa \xE9 a nossa chance de ser ouvido em uma democracia."
     _isCorrect: 1
     _score: 3
-  - _info: Mice?
+  - _info: "escolher quem me representa. E come\xE7ar a mudan\xE7a que eu quero ver."
     _isCorrect: 1
     _score: 4
   _useTimer: 0

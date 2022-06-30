@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: KM
+  m_Name: 3
   m_EditorClassIdentifier: 
-  _info: 1km is equal to ..
+  _info: "3) O futuro do Pa\xEDs\u2026."
   _answers:
-  - _info: 10m
+  - _info: "que futuro? Dif\xEDcil acreditar que o Brasil tem jeito."
     _isCorrect: 1
     _score: 1
-  - _info: 100m
+  - _info: "N\xE3o depende de mim.  Cuido do meu futuro e da minha fam\xEDlia."
     _isCorrect: 1
     _score: 2
-  - _info: 1000m
+  - _info: " depende dos pol\xEDticos, que deviam cuidar mais da popula\xE7\xE3o."
     _isCorrect: 1
     _score: 3
-  - _info: 1000mm
+  - _info: "est\xE1 em nossas m\xE3os e acredito que juntos podemos mudar a realidade."
     _isCorrect: 1
     _score: 4
   _useTimer: 0
-  _timer: 0
+  _timer: 30
   _answerType: 0
-  _addScore: 10
+  _addScore: 50

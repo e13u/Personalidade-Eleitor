@@ -10,23 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: SunTemperature
+  m_Name: 6
   m_EditorClassIdentifier: 
-  _info: The temperature of the sun is about ..
+  _info: 6) Quem influencia a escolha dos meus candidatos?
   _answers:
-  - _info: 10,000 Fahrenheit
+  - _info: Meus grupos de mensagens e redes sociais.
     _isCorrect: 1
     _score: 1
-  - _info: 100,000 Fahrenheit
+  - _info: "Minha fam\xEDlia e amigos, confio muito neles!"
     _isCorrect: 1
     _score: 2
-  - _info: 1,000 Fahrenheit
+  - _info: "Fico de olho nas pesquisas eleitorais e vou com a maioria. Tanta gente
+      n\xE3o pode estar errada."
     _isCorrect: 1
     _score: 3
-  - _info: 1,000 Fahrenheit
+  - _info: "As pesquisas que eu fa\xE7o sobre candidatos, partidos e propostas. Soltou
+      not\xEDcia mentirosa, bloqueio na hora."
     _isCorrect: 1
     _score: 4
   _useTimer: 0
-  _timer: 10
+  _timer: 6
   _answerType: 0
-  _addScore: 20
+  _addScore: 30
