@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  _info: "8) No dia das elei\xE7\xF5es\u2026"
+  _info: "No dia das elei\xE7\xF5es\u2026"
   _answers:
   - _info: "que dia vai ser, mesmo? Que pregui\xE7a."
     _isCorrect: 1

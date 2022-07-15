@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  _info: 2) Votar pra mim significa...
+  _info: Votar pra mim significa...
   _answers:
   - _info: "protestar! Eu voto nulo ou branco, ningu\xE9m que est\xE1 a\xED merece
       meu voto, mesmo."

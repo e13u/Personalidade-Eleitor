@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  _info: "4) Eu me informo\u2026"
+  _info: "Eu me informo\u2026"
   _answers:
   - _info: pelas redes sociais e pelos meus amigos.
     _isCorrect: 1

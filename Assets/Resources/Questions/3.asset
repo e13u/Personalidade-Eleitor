@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  _info: "3) O futuro do Pa\xEDs\u2026."
+  _info: "O futuro do Pa\xEDs\u2026."
   _answers:
   - _info: "que futuro? Dif\xEDcil acreditar que o Brasil tem jeito."
     _isCorrect: 1

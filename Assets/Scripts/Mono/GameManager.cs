@@ -178,7 +178,7 @@ public class GameManager : MonoBehaviour {
         if (questionId >= _questions.Length-1) questionId = _questions.Length-1;
         Display();
         TurnButtons();
-
+        events.UpdateHistoryBar(questionId);
         //UpdateTimer(false);
         //Não é necessário verificar se está correta
         //bool isCorrect = CheckAnswers();
@@ -233,8 +233,8 @@ public class GameManager : MonoBehaviour {
         questionId--;
         if (questionId <= 0) questionId = 0;
         Display();
-
         TurnButtons();
+        events.UpdateHistoryBar(questionId);
     }
 
         #region Timer Methods

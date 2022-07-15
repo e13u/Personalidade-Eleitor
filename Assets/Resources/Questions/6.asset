@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  _info: 6) Quem influencia a escolha dos meus candidatos?
+  _info: Quem influencia a escolha dos meus candidatos?
   _answers:
   - _info: Meus grupos de mensagens e redes sociais.
     _isCorrect: 1

@@ -75,7 +75,16 @@ public class AnswerData : MonoBehaviour {
         if (toggle == null){
             return;
         }
-        toggle.sprite = (Checked) ? checkedToggle : uncheckedToggle;
+        if (Checked)
+        {
+            toggle.sprite = checkedToggle;
+            toggle.enabled = true;
+        }
+        else
+        {
+            toggle.sprite = uncheckedToggle;
+            toggle.enabled = false;
+        }
     }
 
     public void CheckPreviousAnswer(){
@@ -85,6 +94,7 @@ public class AnswerData : MonoBehaviour {
 
      void UpdateUI2()
     {
+        toggle.enabled = true;
         toggle.sprite =  checkedToggle;
     }
 }

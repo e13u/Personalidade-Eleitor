@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  _info: "7) Sobre a elei\xE7\xE3o de deputados, senadores e vereadores\u2026"
+  _info: "Sobre a elei\xE7\xE3o de deputados, senadores e vereadores\u2026"
   _answers:
   - _info: "n\xE3o sei direito o que fazem."
     _isCorrect: 1

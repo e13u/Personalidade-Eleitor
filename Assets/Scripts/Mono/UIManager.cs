@@ -11,6 +11,8 @@ public struct UIManagerParameters
     [Header("Answers Options")]
     [SerializeField] float margins;
     public float Margins { get { return margins; } }
+    [SerializeField] Sprite [] historyProgress;
+    public Sprite[] HistoryProgress { get { return historyProgress; } }
 
     [Header("Resolution Screen Options")]
     [SerializeField] Color correctBGColor;
@@ -19,6 +21,8 @@ public struct UIManagerParameters
     public Color IncorrectBGColor { get { return incorrectBGColor; } }
     [SerializeField] Color finalBGColor;
     public Color FinalBGColor { get { return finalBGColor; } }
+
+
 }
 [Serializable()]
 public struct UIElements
@@ -56,6 +60,8 @@ public struct UIElements
 
     [SerializeField] RectTransform finishUIElements;
     public RectTransform FinishUIElements { get { return finishUIElements; } }
+    [SerializeField] Image historybar;
+    public Image Historybar { get { return historybar; } }
 }
 public class UIManager : MonoBehaviour {
 
@@ -98,6 +104,7 @@ public class UIManager : MonoBehaviour {
         events.DisplayResolutionScreen  += DisplayResolution;
         events.ScoreUpdated             += UpdateScoreUI;
         events.UpdatePreviousAnswer     += UpdatePreviousAnswer;
+        events.UpdateHistoryBar         += UpdateHistoryBar;
     }
     /// <summary>
     /// Function that is called when the behaviour becomes disabled
@@ -108,6 +115,7 @@ public class UIManager : MonoBehaviour {
         events.DisplayResolutionScreen  -= DisplayResolution;
         events.ScoreUpdated             -= UpdateScoreUI;
         events.UpdatePreviousAnswer     -= UpdatePreviousAnswer;
+        events.UpdateHistoryBar         -= UpdateHistoryBar;
     }
 
     /// <summary>
@@ -231,6 +239,10 @@ public class UIManager : MonoBehaviour {
         answerChildData.CheckPreviousAnswer();
     }
 
+    void UpdateHistoryBar(int historyId)
+    {
+        uIElements.Historybar.sprite = parameters.HistoryProgress[historyId];
+    }
     /// <summary>
     /// Function that is used to erase current created answers.
     /// </summary>
