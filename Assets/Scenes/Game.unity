@@ -1525,8 +1525,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Pr\xF3xima\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 95ceed32069b2dc4ab7ab011311b9079, type: 2}
-  m_sharedMaterial: {fileID: 21462227250043156, guid: 95ceed32069b2dc4ab7ab011311b9079,
+  m_fontAsset: {fileID: 11400000, guid: 2fe4a4534b9100b4091fd78025926197, type: 2}
+  m_sharedMaterial: {fileID: 6218135603505961785, guid: 2fe4a4534b9100b4091fd78025926197,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2028,7 +2028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 200
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
@@ -2807,7 +2807,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279700871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb7eadc75c311024c840962a08a007a6, type: 3}
   m_Name: 
@@ -2841,8 +2841,7 @@ MonoBehaviour:
       Pitch: 1
       Loop: 1
     Source: {fileID: 0}
-  sourcePrefab: {fileID: 82509203759054478, guid: 0b2c85631b731e34faec7b3adb879f79,
-    type: 3}
+  sourcePrefab: {fileID: 0}
   startupTrack: GameMusic
 --- !u!1 &1354563564
 GameObject:

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18061297bf07e54d9a2900139165852, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  profileTitle: Me deixa em paz na minha bolha
+  profileDescription: "Voc\xEA tem consci\xEAncia de que vive na sua bolha e que
+    existe um Brasil bem diferente fora dela, mas acredita que, se cada um cuidar
+    da pr\xF3pria vida, vai ficar tudo bem. E que importante n\xE3o \xE9 o mundo
+    aqui fora, \xE9 como a gente se sente por dentro. Ser\xE1, mesmo?   Cedo ou tarde,
+    a sua realidade vai ser impactada pelo que acontece aqui fora. Se voc\xEA quer
+    que esse impacto seja positivo, t\xE1 na hora de sair da zona de conforto e se
+    mexer!   \"Ain, mas eu nem sei por onde come\xE7ar\". Come\xE7a se informando
+    sobre o que t\xE1 acontecendo no Brasil. Sobre quem t\xE1 interessado em fazer
+    daqui um lugar melhor. Pesquisa hist\xF3rico, propostas.   E n\xE3o esquece:
+    as elei\xE7\xF5es n\xE3o s\xE3o s\xF3 para escolher presidente e governador.
+    Os deputados e senadores falam por n\xF3s nos debates e decis\xF5es mais importantes
+    do Pa\xEDs. N\xE3o d\xE1 para deixar qualquer um(a) numa fun\xE7\xE3o t\xE3o
+    importante!  Se liga. Sua vibe vai ficar bem melhor se voc\xEA souber que voc\xEA
+    t\xE1 bem representado nos espa\xE7os de poder. "
+  barValues: 2800000028000000280000001400000028000000
+  gifAnimator: {fileID: 9100000, guid: 2b6535af5b125b440833f0712532c8d9, type: 2}

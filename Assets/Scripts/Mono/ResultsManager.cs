@@ -6,11 +6,21 @@ using TMPro;
 
 public class ResultsManager : MonoBehaviour
 {
-    int finalScore = 0;
+    [SerializeField] private int finalScore = 0;
     int[] scoresAnswers = new int[]{0,0,0,0,0,0,0,0,0};
     public TMP_Text scoreText;
     //public string base_url_2 = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdE6YN4WF3_-lYYi_nEkTRa_wN_NGoCZpe4bVAYdSZa4DFsIw/formResponse";
-    public string base_url = "https://docs.google.com/forms/d/e/1FAIpQLSegBR4OTU18dTOIrN3aWVkyJNmNH6Y511g4MaLC1Mfgw7CnoQ/formResponse";
+    [SerializeField] private  string base_url = "https://docs.google.com/forms/d/e/1FAIpQLSegBR4OTU18dTOIrN3aWVkyJNmNH6Y511g4MaLC1Mfgw7CnoQ/formResponse";
+    [SerializeField] private int profileID;
+    [SerializeField] private ProfileData profileData;
+
+    [Header("UI")]
+    [SerializeField] private List<Slider> scoreBars = new List<Slider>();
+    [SerializeField] private RectTransform loadingPanel;
+    [SerializeField] private RectTransform gifAnimationPanel;
+    [SerializeField] private TMP_Text profileTitleText;
+    [SerializeField] private TMP_Text profileDescriptionText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +53,45 @@ public class ResultsManager : MonoBehaviour
         
         byte[] rawData = form.data;
         WWW www  = new WWW(base_url, rawData);
-        //Debug.Log(www.text);
+        StartCoroutine(LoadTimer());
         yield return www;
+    }
+
+    IEnumerator LoadTimer()
+    {
+        yield return new WaitForSeconds(3.0f);
+        ShowResults();
+    }
+    void ShowResults()
+    {
+        if (finalScore >= 27 && finalScore <= 36) profileID = 4;
+        else if (finalScore >= 21 && finalScore <= 26) profileID = 3;
+        else if (finalScore >= 15 && finalScore <= 20) profileID = 2;
+        else if (finalScore >= 9 && finalScore <= 13) profileID = 1;
+        else profileID = 0;
+
+        string path = "Profiles/" + profileID.ToString();
+        profileData = Resources.Load(path) as ProfileData;
+
+        if (profileData == null) print("BUGOU");
+        profileTitleText.text = profileData.ProfileTitle;
+        profileDescriptionText.text = profileData.ProfileDescription;
+        gifAnimationPanel.transform.GetChild(1).GetComponent<Animator>().runtimeAnimatorController = profileData.GifAnimator;
+        StartCoroutine(ShowGifAnimation());
+    }
+    IEnumerator ShowGifAnimation()
+    {
+        loadingPanel.gameObject.SetActive(false);
+        gifAnimationPanel.gameObject.SetActive(true);
+        yield return new WaitForSeconds(7.0f);
+        gifAnimationPanel.gameObject.SetActive(false);
+        BarsAnimations();
+    }
+    void BarsAnimations()
+    {
+        for (int i = 0; i < scoreBars.Count; i++)
+        {
+            scoreBars[i].GetComponent<SliderBar>().StartSliderAnimation(profileData.BarValues[i]);
+        }
     }
 }

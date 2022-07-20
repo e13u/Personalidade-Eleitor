@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18061297bf07e54d9a2900139165852, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  profileTitle: "No caminho da participa\xE7\xE3o"
+  profileDescription: "Voc\xEA j\xE1 se ligou que o voto \xE9 importante, mas ainda
+    v\xEA a pol\xEDtica como algo distante de voc\xEA. Quer ver as coisas mudarem
+    na sua comunidade, mas n\xE3o sabe como se envolver. Boas not\xEDcias: voc\xEA
+    j\xE1 t\xE1 no caminho certo. S\xF3 falta dar o primeiro passo.  No que voc\xEA
+    acredita? O que quer para o coletivo? Pense nisso ao pesquisar sobre o hist\xF3rico
+    e as propostas dos candidatos e dos partidos pol\xEDticos.  Escolhe com cuidado
+    presidente, governador e prefeito. Mas dedica a mesma aten\xE7\xE3o a quem vai
+    estar nas tribunas, falando por voc\xEA - senadores, deputados e vereadores.
+    O parlamento tem o poder de facilitar ou dificultar a vida do governo. E pode
+    fazer isso a favor das causas em que voc\xEA acredita. Pensa nisso!"
+  barValues: 640000003c0000003c000000640000003c000000
+  gifAnimator: {fileID: 9100000, guid: 8e72e322a625f8f4097b066f3e4a5957, type: 2}
