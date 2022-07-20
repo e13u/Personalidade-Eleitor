@@ -4645,7 +4645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 602dca518c0e45947a23feb7a2fed151, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 184918ab9078de4498483b9500402eb1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5012,6 +5012,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Next_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 4498030126701786669, guid: 7d8b82a7073401143a08dc993e6aca2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1801510413}
+    - target: {fileID: 4498030126701786669, guid: 7d8b82a7073401143a08dc993e6aca2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498030126701786669, guid: 7d8b82a7073401143a08dc993e6aca2e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4498030127862015912, guid: 7d8b82a7073401143a08dc993e6aca2e,
         type: 3}
       propertyPath: m_text
@@ -5037,6 +5052,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1801510410}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1801510412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4498030126701786659, guid: 7d8b82a7073401143a08dc993e6aca2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1801510410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1801510413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801510412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932743dafcaef83499ddfcbe26ab53a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &1873324499
 LightingSettings:
   m_ObjectHideFlags: 0

@@ -433,7 +433,7 @@ public class GameManager : MonoBehaviour {
 
         if(finished){
             PlayerPrefs.SetInt("FinalScore",CalculateScore());
-            SceneManager.LoadScene("Results");
+            SceneManager.LoadScene("Results 1");
         }
     }
 
