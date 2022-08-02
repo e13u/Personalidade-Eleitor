@@ -12,6 +12,7 @@ public class SliderBar : MonoBehaviour
     }
     public void StartSliderAnimation(int maxValue)
     {
+        sliderComponent.value = 0;
         StartCoroutine(SliderAnimation(maxValue));
     }
     IEnumerator SliderAnimation(int maxValue)

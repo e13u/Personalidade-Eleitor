@@ -13,6 +13,7 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] private  string base_url = "https://docs.google.com/forms/d/e/1FAIpQLSegBR4OTU18dTOIrN3aWVkyJNmNH6Y511g4MaLC1Mfgw7CnoQ/formResponse";
     [SerializeField] private int profileID;
     [SerializeField] private ProfileData profileData;
+    [SerializeField] private float gifTimer = 3.0f;
 
     [Header("UI")]
     [SerializeField] private List<Slider> scoreBars = new List<Slider>();
@@ -24,6 +25,7 @@ public class ResultsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        loadingPanel.gameObject.SetActive(true);
         finalScore = PlayerPrefs.GetInt("FinalScore");
         for (int i = 0; i < scoresAnswers.Length; i++)
         {
@@ -83,7 +85,7 @@ public class ResultsManager : MonoBehaviour
     {
         loadingPanel.gameObject.SetActive(false);
         gifAnimationPanel.gameObject.SetActive(true);
-        yield return new WaitForSeconds(7.0f);
+        yield return new WaitForSeconds(gifTimer);
         gifAnimationPanel.gameObject.SetActive(false);
         BarsAnimations();
     }
@@ -93,5 +95,25 @@ public class ResultsManager : MonoBehaviour
         {
             scoreBars[i].GetComponent<SliderBar>().StartSliderAnimation(profileData.BarValues[i]);
         }
+    }
+
+    public void SeeAnotherProfile(int id)
+    {
+        profileID = id;
+        string path = "Profiles/" + profileID.ToString();
+        profileData = Resources.Load(path) as ProfileData;
+
+        profileTitleText.text = profileData.ProfileTitle;
+        profileDescriptionText.text = profileData.ProfileDescription;
+        BarsAnimations();
+    }
+
+    public void ShareContent()
+    {
+        Application.OpenURL("https://evc.camara.leg.br");
+        //TextEditor te = new TextEditor();
+        //te.content = new GUIContent("https://plenarinho.leg.br/diversao/jogos/Build_Personalidade_Eleitor/");
+        //te.SelectAll();
+        //te.Copy();
     }
 }
