@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -84, y: -72.98}
+  m_AnchoredPosition: {x: -83.99609, y: -72.98}
   m_SizeDelta: {x: 47.8269, y: 47.8269}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &222577497974038998
@@ -114,8 +114,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 104.1225, y: -43.55899}
-  m_SizeDelta: {x: 78.3857, y: 174.5306}
+  m_AnchoredPosition: {x: 19.959717, y: -43.55899}
+  m_SizeDelta: {x: 499.1997, y: 174.5306}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &222846560456274306
 CanvasRenderer:
@@ -195,8 +195,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoTextObject: {fileID: 8637107413317183223}
   toggle: {fileID: 114979093443340798}
+  box: {fileID: 89763658533663746}
   uncheckedToggle: {fileID: 0}
   checkedToggle: {fileID: 21300000, guid: edc1393301691f644bf9495facebcfe3, type: 3}
+  checkedBox: {fileID: 21300000, guid: 8a5b24d0cad41a547a1c9874dfe83233, type: 3}
+  uncheckedBox: {fileID: 21300000, guid: e15c2d9af690b1442bd7496826103a5f, type: 3}
   events: {fileID: 11400000, guid: 8e0c26d6986631643bcc9fe8626c36ae, type: 2}
   Checked: 0
   answerId: -1
@@ -268,7 +271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 20075fa42d917d14c81d7a5f9d15cc34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e15c2d9af690b1442bd7496826103a5f, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -277,7 +280,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 2.23
+  m_PixelsPerUnitMultiplier: 1.3
 --- !u!114 &4912863939487903033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,8 +296,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 50
     m_Right: 50
-    m_Top: 40
-    m_Bottom: 40
+    m_Top: 30
+    m_Bottom: 30
   m_ChildAlignment: 5
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
@@ -340,7 +343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3078672519430072801
@@ -360,7 +363,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 5
+  m_ChildAlignment: 2
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
@@ -451,15 +454,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Lorem ipsum '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 549141260de520c418124a53903a5274, type: 2}
+  m_sharedMaterial: {fileID: -855780345986501056, guid: 549141260de520c418124a53903a5274,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280361249
+  m_fontColor: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -476,8 +480,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

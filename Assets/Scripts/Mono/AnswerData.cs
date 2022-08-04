@@ -9,10 +9,13 @@ public class AnswerData : MonoBehaviour {
     [Header("UI Elements")]
     [SerializeField]    TextMeshProUGUI infoTextObject      = null;
     [SerializeField]    Image           toggle              = null;
+    [SerializeField]    Image           box              = null;
 
     [Header("Textures")]
     [SerializeField]    Sprite          uncheckedToggle     = null;
     [SerializeField]    Sprite          checkedToggle       = null;
+    [SerializeField]    Sprite          checkedBox     = null;
+    [SerializeField]    Sprite          uncheckedBox       = null;
 
     [Header("References")]
     [SerializeField]    GameEvents      events              = null;
@@ -79,11 +82,13 @@ public class AnswerData : MonoBehaviour {
         {
             toggle.sprite = checkedToggle;
             toggle.enabled = true;
+            box.sprite = checkedBox;
         }
         else
         {
             toggle.sprite = uncheckedToggle;
             toggle.enabled = false;
+            box.sprite = uncheckedBox;
         }
     }
 
@@ -96,5 +101,6 @@ public class AnswerData : MonoBehaviour {
     {
         toggle.enabled = true;
         toggle.sprite =  checkedToggle;
+        box.sprite = checkedBox;
     }
 }
