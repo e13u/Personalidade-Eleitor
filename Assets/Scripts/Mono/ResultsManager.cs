@@ -11,6 +11,7 @@ public class ResultsManager : MonoBehaviour
     public TMP_Text scoreText;
     //public string base_url_2 = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdE6YN4WF3_-lYYi_nEkTRa_wN_NGoCZpe4bVAYdSZa4DFsIw/formResponse";
     [SerializeField] private  string base_url = "https://docs.google.com/forms/d/e/1FAIpQLSegBR4OTU18dTOIrN3aWVkyJNmNH6Y511g4MaLC1Mfgw7CnoQ/formResponse";
+    [SerializeField] private  string share_url = "https://evc.camara.leg.br/material/quem-e-voce-decidindo-o-futuro-do-pais/";
     [SerializeField] private int profileID;
     [SerializeField] private ProfileData profileData;
     [SerializeField] private float gifTimer = 3.0f;
@@ -19,6 +20,7 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] private List<Slider> scoreBars = new List<Slider>();
     [SerializeField] private RectTransform loadingPanel;
     [SerializeField] private RectTransform gifAnimationPanel;
+    [SerializeField] private RectTransform containerpanel;
     [SerializeField] private TMP_Text profileTitleText;
     [SerializeField] private TMP_Text profileDescriptionText;
 
@@ -91,6 +93,7 @@ public class ResultsManager : MonoBehaviour
     }
     void BarsAnimations()
     {
+        containerpanel.position = new Vector2(containerpanel.position.x, 0f);
         for (int i = 0; i < scoreBars.Count; i++)
         {
             scoreBars[i].GetComponent<SliderBar>().StartSliderAnimation(profileData.BarValues[i]);
