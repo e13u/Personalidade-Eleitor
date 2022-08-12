@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  _info: "No dia das elei\xE7\xF5es\u2026"
+  _info: "No dia das elei\xE7\xF5es..."
   _answers:
   - _info: "que dia vai ser, mesmo? Que pregui\xE7a."
     _isCorrect: 1
@@ -21,12 +21,12 @@ MonoBehaviour:
       de eleitor."
     _isCorrect: 1
     _score: 2
-  - _info: vou dar uma pesquisada nos candidatos antes de ir e levar uma colinha.
-    _isCorrect: 1
-    _score: 3
   - _info: "j\xE1 t\xF4 at\xE9 com a roupa de ir. Bora mudar esse Pa\xEDs!"
     _isCorrect: 1
     _score: 4
+  - _info: vou dar uma pesquisada nos candidatos antes de ir e levar uma colinha.
+    _isCorrect: 1
+    _score: 3
   _useTimer: 0
   _timer: 4
   _answerType: 0

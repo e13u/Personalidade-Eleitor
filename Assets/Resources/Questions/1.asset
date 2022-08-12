@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  _info: "Pra mim, pol\xEDtica\u2026"
+  _info: "Pra mim, pol\xEDtica..."
   _answers:
+  - _info: "d\xE1 confus\xE3o e briga no almo\xE7o de domingo."
+    _isCorrect: 1
+    _score: 3
   - _info: "\xE9 s\xF3 corrup\xE7\xE3o, quero dist\xE2ncia."
     _isCorrect: 1
     _score: 1
   - _info: "n\xE3o tem nada a ver comigo. Tenho mais o que fazer."
     _isCorrect: 1
     _score: 2
-  - _info: "d\xE1 confus\xE3o e briga no almo\xE7o de domingo."
-    _isCorrect: 1
-    _score: 3
   - _info: "t\xE1 em tudo que a gente faz."
     _isCorrect: 1
     _score: 4

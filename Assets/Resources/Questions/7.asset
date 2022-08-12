@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  _info: "Sobre a elei\xE7\xE3o de deputados, senadores e vereadores\u2026"
+  _info: "Sobre a elei\xE7\xE3o de deputados, senadores e vereadores..."
   _answers:
-  - _info: "n\xE3o sei direito o que fazem."
-    _isCorrect: 1
-    _score: 1
   - _info: "importante, mesmo, \xE9 escolher presidente, governador e prefeito."
     _isCorrect: 1
     _score: 2
-  - _info: "dif\xEDcil escolher, tanta gente, n\xE9?"
-    _isCorrect: 1
-    _score: 3
   - _info: pesquiso bastante para escolher candidatos que me representem.
     _isCorrect: 1
     _score: 4
+  - _info: "dif\xEDcil escolher... tanta gente, n\xE9?"
+    _isCorrect: 1
+    _score: 3
+  - _info: "n\xE3o sei direito o que fazem."
+    _isCorrect: 1
+    _score: 1
   _useTimer: 0
   _timer: 10
   _answerType: 0

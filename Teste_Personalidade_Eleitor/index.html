@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ForcaVoto</title>
+    <title>Unity WebGL Player | Câmara dos Deputados</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ForcaVoto</div>
+        <div id="unity-build-title">Câmara dos Deputados</div>
       </div>
     </div>
     <script>
@@ -38,7 +38,7 @@
       // way that non-critical warnings and error messages are presented to the
       // user.
       function unityShowBanner(msg, type) {
-        //function updateBannerVisibility() {
+        function updateBannerVisibility() {
           //warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
         //}
         //var div = document.createElement('div');
@@ -51,8 +51,8 @@
             //warningBanner.removeChild(div);
             //updateBannerVisibility();
           //}, 5000);
-        //}
-        //updateBannerVisibility();
+        }
+        updateBannerVisibility();
       }
 
       var buildUrl = "Build";
@@ -63,7 +63,7 @@
         codeUrl: buildUrl + "/Teste_Personalidade_Eleitor.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "COEDE",
-        productName: "ForcaVoto",
+        productName: "Câmara dos Deputados",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };

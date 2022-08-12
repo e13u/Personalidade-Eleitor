@@ -68,11 +68,11 @@ public class ResultsManager : MonoBehaviour
     }
     void ShowResults()
     {
-        if (finalScore >= 27 && finalScore <= 36) profileID = 4;
-        else if (finalScore >= 21 && finalScore <= 26) profileID = 3;
-        else if (finalScore >= 15 && finalScore <= 20) profileID = 2;
-        else if (finalScore >= 9 && finalScore <= 13) profileID = 1;
-        else profileID = 0;
+        if (finalScore >= 30 && finalScore <= 36) profileID = 4;
+        else if (finalScore >= 23 && finalScore <= 29) profileID = 3;
+        else if (finalScore >= 16 && finalScore <= 22) profileID = 2;
+        else if (finalScore >= 9 && finalScore <= 15) profileID = 1;
+        else profileID = 1;
 
         string path = "Profiles/" + profileID.ToString();
         profileData = Resources.Load(path) as ProfileData;
@@ -113,7 +113,7 @@ public class ResultsManager : MonoBehaviour
 
     public void ShareContent()
     {
-        Application.OpenURL("https://evc.camara.leg.br");
+        Application.OpenURL(share_url);
         //TextEditor te = new TextEditor();
         //te.content = new GUIContent("https://plenarinho.leg.br/diversao/jogos/Build_Personalidade_Eleitor/");
         //te.SelectAll();

@@ -24,8 +24,7 @@ MonoBehaviour:
       n\xE3o pode estar errada."
     _isCorrect: 1
     _score: 3
-  - _info: "As pesquisas que eu fa\xE7o sobre candidatos, partidos e propostas. Soltou
-      not\xEDcia mentirosa, bloqueio na hora."
+  - _info: "As pesquisas que eu fa\xE7o sobre candidatos, partidos e propostas."
     _isCorrect: 1
     _score: 4
   _useTimer: 0

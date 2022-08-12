@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  _info: "Eu me informo\u2026"
+  _info: Eu me informo...
   _answers:
-  - _info: pelas redes sociais e pelos meus amigos.
-    _isCorrect: 1
-    _score: 1
-  - _info: "pouco. S\xF3 assim pra manter uma vibe boa."
-    _isCorrect: 1
-    _score: 2
-  - _info: "pela internet, pela TV, pelas redes sociais\u2026 detesto quando todo
-      mundo sabe de alguma coisa, menos eu."
-    _isCorrect: 1
-    _score: 3
   - _info: "bastante. Fico de olho se as not\xEDcias que eu li s\xE3o verdadeiras
       e procuro conhecer outras vis\xF5es dessas hist\xF3rias."
     _isCorrect: 1
     _score: 4
+  - _info: pelas redes sociais e pelos meus amigos.
+    _isCorrect: 1
+    _score: 1
+  - _info: "pela internet, pela TV, pelas redes sociais\u2026 detesto quando todo
+      mundo sabe de alguma coisa, menos eu."
+    _isCorrect: 1
+    _score: 3
+  - _info: "pouco. S\xF3 assim pra manter uma vibe boa."
+    _isCorrect: 1
+    _score: 2
   _useTimer: 0
   _timer: 0
   _answerType: 0

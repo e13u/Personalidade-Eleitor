@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 5
   m_EditorClassIdentifier: 
-  _info: "Quando recebo not\xEDcia sobre as elei\xE7\xF5es pelas redes sociais\u2026"
+  _info: "Quando recebo not\xEDcia sobre as elei\xE7\xF5es pelas redes sociais..."
   _answers:
-  - _info: compartilho de cara. Geral tem que saber a verdade!
-    _isCorrect: 1
-    _score: 1
-  - _info: "s\xF3 compartilho se n\xE3o for sensacionalista."
-    _isCorrect: 1
-    _score: 2
-  - _info: "checo se n\xE3o \xE9 fake news antes de compartilhar."
-    _isCorrect: 1
-    _score: 3
   - _info: "checo se \xE9 falsa e ainda fa\xE7o text\xE3o explicando para quem compartilhou."
     _isCorrect: 1
     _score: 4
+  - _info: "s\xF3 compartilho se n\xE3o for sensacionalista."
+    _isCorrect: 1
+    _score: 2
+  - _info: compartilho de cara. Geral tem que saber a verdade!
+    _isCorrect: 1
+    _score: 1
+  - _info: "checo se n\xE3o \xE9 fake news antes de compartilhar."
+    _isCorrect: 1
+    _score: 3
   _useTimer: 0
   _timer: 10
   _answerType: 0

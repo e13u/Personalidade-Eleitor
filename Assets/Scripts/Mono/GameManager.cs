@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject finishButton;
     public GameObject nextButton;
+    public GameObject backButton;
 
     private             bool                IsFinished
     {
@@ -80,7 +81,7 @@ public class GameManager : MonoBehaviour {
     void Start()
     {
         events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
-
+        backButton.SetActive(false);
         timerDefaultColor = timerText.color;
         LoadQuestions();
 
@@ -113,7 +114,7 @@ public class GameManager : MonoBehaviour {
             PickedAnswers.Clear();
             PickedAnswers.Add(newAnswer);
             savedAnswers[questionId] = newAnswer.answerId;
-            Invoke("Accept",0.2f);
+            //Invoke("Accept",0.2f);
 
         //}
         //else
@@ -175,7 +176,17 @@ public class GameManager : MonoBehaviour {
     public void Accept()
     {
         questionId++;
-        if (questionId >= _questions.Length-1) questionId = _questions.Length-1;
+        if(questionId > 0)
+        {
+            backButton.SetActive(true);
+        }
+
+        if (questionId >= _questions.Length - 1)
+        {
+            questionId = _questions.Length - 1;
+            //Invoke("ResultsScreen", 1);
+        }
+
         Display();
         TurnButtons();
         events.UpdateHistoryBar(questionId);
@@ -191,29 +202,6 @@ public class GameManager : MonoBehaviour {
         {
             SetHighscore();
         }
-
-        //var type 
-        //    = (IsFinished) 
-        //    ? UIManager.ResolutionScreenType.Finish 
-        //    : (isCorrect) ? UIManager.ResolutionScreenType.Correct 
-        //    : UIManager.ResolutionScreenType.Incorrect;
-
-        //if (events.DisplayResolutionScreen != null)
-        //{
-        //    events.DisplayResolutionScreen(type, Questions[currentQuestion].AddScore);
-        //}
-
-        //AudioManager.Instance.PlaySound((isCorrect) ? "CorrectSFX" : "IncorrectSFX");
-
-        //if (type != UIManager.ResolutionScreenType.Finish)
-        //{
-        //    if (IE_WaitTillNextRound != null)
-        //    {
-        //        StopCoroutine(IE_WaitTillNextRound);
-        //    }
-        //    IE_WaitTillNextRound = WaitTillNextRound();
-        //    StartCoroutine(IE_WaitTillNextRound);
-        //}
     }
     void TurnButtons()
     {
@@ -231,7 +219,11 @@ public class GameManager : MonoBehaviour {
     public void PreviousQuestion()
     {
         questionId--;
-        if (questionId <= 0) questionId = 0;
+        if (questionId <= 0)
+        {
+            backButton.SetActive(false);
+            questionId = 0;
+        }
         Display();
         TurnButtons();
         events.UpdateHistoryBar(questionId);
